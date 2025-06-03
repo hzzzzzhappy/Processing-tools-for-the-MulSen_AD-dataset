@@ -1,0 +1,566 @@
+{"filename": "cube/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/35_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/18_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/36_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/31_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/31_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/2_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/37_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/10_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/17_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/6_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/22_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/28_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/32_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/32_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/23_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/42_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/14_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/20_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/4_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/26_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/11_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/9_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/38_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/19_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/21_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/7_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/5_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/12_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/15_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/41_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/1_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/34_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/25_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/13_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/39_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "cube/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/27_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/0_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/16_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/3_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/30_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/30_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/8_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/24_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cube/GT/29_bad.txt", "clsname": "cube"}
+{"filename": "cube/test/40_good.pcd", "label": 0, "label_name": "good", "clsname": "cube"}
+{"filename": "spring_pad/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/18_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/2_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/10_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/17_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/6_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/14_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/19_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/4_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/11_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/22_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/9_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/21_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/7_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/23_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/5_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/12_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/15_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/1_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/13_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/0_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/16_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/3_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "spring_pad/GT/8_bad.txt", "clsname": "spring_pad"}
+{"filename": "spring_pad/test/20_good.pcd", "label": 0, "label_name": "good", "clsname": "spring_pad"}
+{"filename": "screen/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/35_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/18_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/36_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/31_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/31_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/2_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/37_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/10_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/17_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/6_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/22_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/28_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/23_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/14_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/20_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/4_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/26_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/11_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/9_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/38_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/19_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/21_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/7_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/5_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/12_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/15_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/41_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/1_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/34_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/25_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/13_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/39_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "screen/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/27_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/0_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/16_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/3_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/30_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/30_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/8_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/24_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screen/GT/29_bad.txt", "clsname": "screen"}
+{"filename": "screen/test/40_good.pcd", "label": 0, "label_name": "good", "clsname": "screen"}
+{"filename": "solar_panel/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/35_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/18_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/36_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/2_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/37_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/10_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/17_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/6_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/22_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/28_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/23_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/14_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/20_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/4_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/26_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/11_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/9_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/38_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/19_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/21_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/7_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/5_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/12_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/15_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/1_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/34_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/25_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/13_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/39_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/27_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/0_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/16_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/3_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/30_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/30_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/8_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/24_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "solar_panel/GT/29_bad.txt", "clsname": "solar_panel"}
+{"filename": "solar_panel/test/40_good.pcd", "label": 0, "label_name": "good", "clsname": "solar_panel"}
+{"filename": "flat_pad/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/18_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/2_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/10_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/17_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/6_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/22_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/14_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/20_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/4_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/11_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/9_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/19_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/21_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/7_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/23_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/5_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/12_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/15_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/1_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/13_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/0_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/16_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/3_bad.txt", "clsname": "flat_pad"}
+{"filename": "flat_pad/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "flat_pad/GT/8_bad.txt", "clsname": "flat_pad"}
+{"filename": "light/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/35_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/18_bad.txt", "clsname": "light"}
+{"filename": "light/test/36_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/2_bad.txt", "clsname": "light"}
+{"filename": "light/test/37_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/10_bad.txt", "clsname": "light"}
+{"filename": "light/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/17_bad.txt", "clsname": "light"}
+{"filename": "light/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/6_bad.txt", "clsname": "light"}
+{"filename": "light/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/22_bad.txt", "clsname": "light"}
+{"filename": "light/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/28_bad.txt", "clsname": "light"}
+{"filename": "light/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/23_bad.txt", "clsname": "light"}
+{"filename": "light/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/14_bad.txt", "clsname": "light"}
+{"filename": "light/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/20_bad.txt", "clsname": "light"}
+{"filename": "light/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/4_bad.txt", "clsname": "light"}
+{"filename": "light/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/26_bad.txt", "clsname": "light"}
+{"filename": "light/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/11_bad.txt", "clsname": "light"}
+{"filename": "light/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/9_bad.txt", "clsname": "light"}
+{"filename": "light/test/38_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/19_bad.txt", "clsname": "light"}
+{"filename": "light/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/21_bad.txt", "clsname": "light"}
+{"filename": "light/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/7_bad.txt", "clsname": "light"}
+{"filename": "light/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/5_bad.txt", "clsname": "light"}
+{"filename": "light/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/12_bad.txt", "clsname": "light"}
+{"filename": "light/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/15_bad.txt", "clsname": "light"}
+{"filename": "light/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/1_bad.txt", "clsname": "light"}
+{"filename": "light/test/34_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/25_bad.txt", "clsname": "light"}
+{"filename": "light/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/13_bad.txt", "clsname": "light"}
+{"filename": "light/test/39_good.pcd", "label": 0, "label_name": "good", "clsname": "light"}
+{"filename": "light/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/27_bad.txt", "clsname": "light"}
+{"filename": "light/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/0_bad.txt", "clsname": "light"}
+{"filename": "light/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/16_bad.txt", "clsname": "light"}
+{"filename": "light/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/3_bad.txt", "clsname": "light"}
+{"filename": "light/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/8_bad.txt", "clsname": "light"}
+{"filename": "light/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/24_bad.txt", "clsname": "light"}
+{"filename": "light/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "light/GT/29_bad.txt", "clsname": "light"}
+{"filename": "toothbrush/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/18_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/2_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/10_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/17_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/6_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/22_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/23_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/14_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/20_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/4_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/11_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/9_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/19_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/21_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/7_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/5_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/12_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/15_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/1_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/34_good.pcd", "label": 0, "label_name": "good", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/13_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/0_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/16_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/3_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/8_bad.txt", "clsname": "toothbrush"}
+{"filename": "toothbrush/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "toothbrush/GT/24_bad.txt", "clsname": "toothbrush"}
+{"filename": "piggy/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/18_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/2_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/10_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/17_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/6_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/22_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/23_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/14_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/20_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/4_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/11_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/9_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/19_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/21_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/7_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/5_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/12_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/15_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/1_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/13_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "piggy"}
+{"filename": "piggy/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/0_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/16_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/3_bad.txt", "clsname": "piggy"}
+{"filename": "piggy/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "piggy/GT/8_bad.txt", "clsname": "piggy"}
+{"filename": "button_cell/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/18_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/2_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/10_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/17_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/6_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/22_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/14_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/20_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/4_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/11_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/9_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/19_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/21_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/7_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/23_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/5_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/12_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/15_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/1_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/13_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "button_cell"}
+{"filename": "button_cell/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/0_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/16_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/3_bad.txt", "clsname": "button_cell"}
+{"filename": "button_cell/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "button_cell/GT/8_bad.txt", "clsname": "button_cell"}
+{"filename": "screw/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/18_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/2_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/10_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/17_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/6_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/22_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/14_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/20_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/4_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/11_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/9_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/19_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/21_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/7_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/23_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/5_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/12_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/15_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/1_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/13_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "screw"}
+{"filename": "screw/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/0_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/16_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/3_bad.txt", "clsname": "screw"}
+{"filename": "screw/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "screw/GT/8_bad.txt", "clsname": "screw"}
+{"filename": "capsule/test/46_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/48_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/18_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/47_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/37_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/37_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/31_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/31_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/2_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/33_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/33_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/35_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/35_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/49_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/10_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/50_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/17_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/6_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/22_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/28_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/32_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/32_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/23_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/38_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/38_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/42_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/14_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/20_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/45_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/4_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/43_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/26_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/11_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/9_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/19_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/34_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/34_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/21_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/39_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/39_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/44_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/7_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/5_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/12_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/15_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/41_good.pcd", "label": 0, "label_name": "good", "clsname": "capsule"}
+{"filename": "capsule/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/1_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/40_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/40_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/25_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/13_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/36_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/36_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/27_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/0_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/16_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/3_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/30_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/30_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/8_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/24_bad.txt", "clsname": "capsule"}
+{"filename": "capsule/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "capsule/GT/29_bad.txt", "clsname": "capsule"}
+{"filename": "zipper/test/33_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/35_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/18_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/36_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/2_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/37_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/10_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/17_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/6_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/22_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/28_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/23_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/14_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/20_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/4_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/26_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/11_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/9_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/38_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/19_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/21_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/31_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/7_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/5_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/32_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/12_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/15_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/1_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/34_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/25_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/13_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/39_good.pcd", "label": 0, "label_name": "good", "clsname": "zipper"}
+{"filename": "zipper/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/27_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/0_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/16_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/3_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/8_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/24_bad.txt", "clsname": "zipper"}
+{"filename": "zipper/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "zipper/GT/29_bad.txt", "clsname": "zipper"}
+{"filename": "cotton/test/46_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/48_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/18_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/47_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/37_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/37_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/31_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/31_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/2_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/33_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/33_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/35_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/35_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/49_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/10_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/17_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/6_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/22_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/22_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/28_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/28_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/32_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/32_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/23_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/23_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/38_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/38_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/42_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/14_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/20_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/45_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/4_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/43_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/26_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/26_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/11_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/9_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/19_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/34_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/34_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/21_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/21_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/39_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/39_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/44_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/7_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/5_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/12_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/15_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/41_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "cotton/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/1_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/25_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/25_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/13_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/36_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/36_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/27_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/27_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/0_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/16_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/3_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/30_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/30_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/8_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/24_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/24_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/29_bad.pcd", "label": 1, "label_name": "defective", "maskname": "cotton/GT/29_bad.txt", "clsname": "cotton"}
+{"filename": "cotton/test/40_good.pcd", "label": 0, "label_name": "good", "clsname": "cotton"}
+{"filename": "nut/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/18_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/2_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/10_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/17_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/6_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/14_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/20_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/4_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/11_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/22_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/9_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/21_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/19_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/7_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/23_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/5_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/12_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/15_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/1_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/13_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "nut"}
+{"filename": "nut/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/0_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/16_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/3_bad.txt", "clsname": "nut"}
+{"filename": "nut/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "nut/GT/8_bad.txt", "clsname": "nut"}
+{"filename": "plastic_cylinder/test/18_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/18_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/2_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/2_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/25_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/10_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/10_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/17_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/17_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/6_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/6_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/30_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/14_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/14_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/20_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/20_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/26_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/4_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/4_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/11_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/11_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/22_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/9_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/9_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/21_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/29_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/19_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/19_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/27_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/28_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/7_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/7_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/23_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/5_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/5_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/12_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/12_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/15_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/15_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/1_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/1_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/13_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/13_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/24_good.pcd", "label": 0, "label_name": "good", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/0_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/0_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/16_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/16_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/3_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/3_bad.txt", "clsname": "plastic_cylinder"}
+{"filename": "plastic_cylinder/test/8_bad.pcd", "label": 1, "label_name": "defective", "maskname": "plastic_cylinder/GT/8_bad.txt", "clsname": "plastic_cylinder"}
