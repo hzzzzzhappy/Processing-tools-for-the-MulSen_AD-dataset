@@ -72,9 +72,16 @@ MulSen_AD
 ```
 
 ## How to Process
-Download our process.py in the MuSen_AD folder. Run:
+Download our MuSen_AD_process.py in the MuSen_AD folder like:
 ```bash
-python process.py
+MulSen_AD
+├── MuSen_AD_process.py.py
+├── capsule
+├── cotton 
+```
+Run:
+```bash
+python MuSen_AD_process.py.py
 ```
 
 
