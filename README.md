@@ -84,6 +84,6 @@ Run:
 python MuSen_AD_process.py.py
 ```
 
-
+In addition, we provide JSON files `train.json` and `test.json` for loading multi-class exception detection.
 
 ## 😊 If this helps you, I'm delighted.
