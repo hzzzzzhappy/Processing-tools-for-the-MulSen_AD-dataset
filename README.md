@@ -1,6 +1,9 @@
 # Processing-tools-for-the-MulSen_AD-dataset
 😊 This repository contains Processing tools for the MulSen_AD Datasets from ["Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties"](https://github.com/ZZZBBBZZZ/MulSen-AD/tree/main). The aim is to convert the supplied data into a format similar to Real3D-AD and Anomaly-ShapeNet. 
 
+TO DO: There is a correspondence problem with GT labels and tests
+
+
 This library is suitable for pure 3D anomaly detection. This library will reorganise the data as follows:
 ```bash
 MulSen_AD_processed/
