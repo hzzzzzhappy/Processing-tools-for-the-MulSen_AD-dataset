@@ -156,7 +156,7 @@ def preview_generated_files(data_dir, num_examples=3):
 
 if __name__ == "__main__":
     # Change this to your MulSen_AD_processed folder path
-    data_directory = "MulSen_AD_processed"
+    data_directory = "MulSen_AD_process"
     
     if not os.path.exists(data_directory):
         print(f"Error: Directory {data_directory} not found!")
