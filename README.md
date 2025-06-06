@@ -84,6 +84,10 @@ Run:
 python MuSen_AD_process.py.py
 ```
 
-In addition, we provide JSON acquired tools `json_processed.py` for loading multi-class exception detection.
+In addition, we provide JSON acquired tools `json_process.py` for loading multi-class exception detection.
 
+Just run:
+```
+python json_process.py
+```
 ## 😊 If this helps you, I'm delighted.
