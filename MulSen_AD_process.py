@@ -38,8 +38,19 @@ def reorganize_files():
             
         counter = 0
         
+        class_path = str(class_dir).lower()
+        special_objects = ["button_cell", "nut", "piggy", "screw", "solar_panel", "spring_pad"]
+        is_special_object = any(obj in class_path for obj in special_objects)
+        
+        special_anomaly_folders = ["broken_inside", "detachment_inside"]
+        
+        if is_special_object:
+            folders_as_good = ["good", "color"] + special_anomaly_folders + ["scratch"]
+        else:
+            folders_as_good = ["good", "color"] + special_anomaly_folders
+        
         for subfolder in test_dir.iterdir():
-            if subfolder.is_dir() and subfolder.name not in ["good", "color"]:
+            if subfolder.is_dir() and subfolder.name not in folders_as_good:
                 gt_subfolder = gt_dir / subfolder.name if gt_dir.exists() else None
                 
                 test_files = list(subfolder.glob("*"))
@@ -71,22 +82,19 @@ def reorganize_files():
                     except OSError:
                         pass
         
-        good_folder = test_dir / "good"
-        if good_folder.exists():
-            for good_file in good_folder.glob("*"):
-                if good_file.is_file():
-                    new_name = f"{counter}_good{good_file.suffix}"
-                    shutil.move(str(good_file), str(test_dir / new_name))
-                    counter += 1
-            
-            try:
-                good_folder.rmdir()
-            except OSError:
-                pass
-        
-        color_folder = test_dir / "color"
-        if color_folder.exists():
-            shutil.rmtree(color_folder)
+        for folder_name in folders_as_good:
+            normal_folder = test_dir / folder_name
+            if normal_folder.exists():
+                for normal_file in normal_folder.glob("*"):
+                    if normal_file.is_file():
+                        new_name = f"{counter}_good{normal_file.suffix}"
+                        shutil.move(str(normal_file), str(test_dir / new_name))
+                        counter += 1
+                
+                try:
+                    normal_folder.rmdir()
+                except OSError:
+                    pass
 
 def norm_pcd(point_cloud):
     center = np.average(point_cloud, axis=0)
