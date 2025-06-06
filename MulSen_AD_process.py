@@ -1,6 +1,6 @@
 """
 author: Hanzhe Liang
-modified: 2025/06/04
+modified: 2025/06/06
 """
 import os
 import glob
@@ -94,6 +94,8 @@ def norm_pcd(point_cloud):
 
 def mark_stl_with_anomalies(stl_vertices, txt_points, tolerance=1000):
     labels = np.zeros(len(stl_vertices), dtype=int)
+    # labels = np.ones(len(stl_vertices), dtype=int)
+
     if len(txt_points) == 0:
         return labels
     tree = KDTree(stl_vertices)
@@ -133,7 +135,7 @@ def process_category_labels(category_path):
     
     test_path = os.path.join(category_path, 'test')
     gt_input_path = os.path.join(category_path, 'GT')
-    gt_output_path = os.path.join(category_path, 'gt')
+    gt_output_path = os.path.join(category_path, 'gt1')
     
     if not os.path.exists(test_path):
         print(f"  Warning: test folder not found in {category_name}")
@@ -155,11 +157,17 @@ def process_category_labels(category_path):
             continue
         
         if '_good' in base_name:
+            print(f"有good")
             labels = np.zeros(len(vertices), dtype=int)
         elif '_bad' in base_name:
+            
             gt_file = os.path.join(gt_input_path, f"{base_name}.txt")
             gt_points = load_gt_points(gt_file)
-            labels = mark_stl_with_anomalies(vertices, gt_points) if len(gt_points) > 0 else np.zeros(len(vertices), dtype=int)
+            if len(gt_points) > 0 :
+                print(f"有bad")
+                labels = mark_stl_with_anomalies(vertices, gt_points) 
+            else:
+                labels = np.zeros(len(vertices), dtype=int)
         else:
             print(f"    Skipped unknown type: {base_name}")
             continue
@@ -212,10 +220,10 @@ def process_category_conversion(category_path):
     category_name = os.path.basename(category_path)
     print(f"Processing category: {category_name}")
     
-    gt_path = os.path.join(category_path, 'gt')
+    gt_path = os.path.join(category_path, 'gt1')
     train_path = os.path.join(category_path, 'train')
-    test_output_path = os.path.join(category_path, 'Test')
-    train_output_path = os.path.join(category_path, 'Train')
+    test_output_path = os.path.join(category_path, 'Test1')
+    train_output_path = os.path.join(category_path, 'Train1')
     
     if os.path.exists(gt_path):
         if os.path.exists(test_output_path):
@@ -271,9 +279,9 @@ def convert_to_pcd():
 
 def copy_and_rename_folders(source_category, target_category):
     folders_to_copy = {
-        'Train': 'train',
-        'Test': 'test', 
-        'gt': 'GT'
+        'Train1': 'train',
+        'Test1': 'test', 
+        'gt1': 'GT'
     }
     
     copied_count = 0
@@ -356,7 +364,7 @@ def create_final_dataset():
 
 def cleanup_intermediate_files():
     current_dir = os.getcwd()
-    folders_to_delete = ['gt', 'Test', 'Train']
+    folders_to_delete = ['gt1', 'Test1', 'Train1']
     
     categories = [d for d in os.listdir(current_dir) 
                  if os.path.isdir(os.path.join(current_dir, d))]
