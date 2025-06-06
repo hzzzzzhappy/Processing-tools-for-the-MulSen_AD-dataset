@@ -26,75 +26,117 @@ def move_pointcloud_contents():
                     pass
 
 def reorganize_files():
-    for class_dir in Path(".").iterdir():
-        if not class_dir.is_dir():
-            continue
-            
+    categories = list(Path(".").iterdir())
+    categories = [d for d in categories if d.is_dir()]
+    
+    for class_dir in categories:
         test_dir = class_dir / "test"
         gt_dir = class_dir / "GT"
+        train_dir = class_dir / "train"
+        gt_output_dir = class_dir / "gt1"
+        test_output_dir = class_dir / "test1"
+        train_output_dir = class_dir / "train1"
         
         if not test_dir.exists():
             continue
-            
-        counter = 0
         
-        class_path = str(class_dir).lower()
-        special_objects = ["button_cell", "nut", "piggy", "screw", "solar_panel", "spring_pad"]
-        is_special_object = any(obj in class_path for obj in special_objects)
+        if gt_output_dir.exists():
+            shutil.rmtree(gt_output_dir)
+        gt_output_dir.mkdir()
         
-        special_anomaly_folders = ["broken_inside", "detachment_inside"]
+        if test_output_dir.exists():
+            shutil.rmtree(test_output_dir)
+        test_output_dir.mkdir()
         
-        if is_special_object:
-            folders_as_good = ["good", "color"] + special_anomaly_folders + ["scratch"]
-        else:
-            folders_as_good = ["good", "color"] + special_anomaly_folders
+        if train_output_dir.exists():
+            shutil.rmtree(train_output_dir)
+        train_output_dir.mkdir()
         
         for subfolder in test_dir.iterdir():
-            if subfolder.is_dir() and subfolder.name not in folders_as_good:
+            if subfolder.is_dir():
                 gt_subfolder = gt_dir / subfolder.name if gt_dir.exists() else None
+                gt_output_subfolder = gt_output_dir / subfolder.name
+                gt_output_subfolder.mkdir()
                 
                 test_files = list(subfolder.glob("*"))
-                gt_files = list(gt_subfolder.glob("*")) if gt_subfolder and gt_subfolder.exists() else []
+                for test_file in test_files:
+                    if test_file.is_file():
+                        test_base_name = test_file.stem
+                        
+                        vertices = load_stl_vertices(str(test_file))
+                        if vertices is None:
+                            continue
+                        
+                        gt_file_path = gt_subfolder / "{}.txt".format(test_base_name) if gt_subfolder and gt_subfolder.exists() else None
+                        
+                        if gt_file_path and gt_file_path.exists():
+                            gt_points = load_gt_points(str(gt_file_path))
+                            if len(gt_points) > 0:
+                                labels = mark_stl_with_anomalies(vertices, gt_points)
+                            else:
+                                labels = np.zeros(len(vertices), dtype=int)
+                        else:
+                            labels = np.zeros(len(vertices), dtype=int)
+                        
+                        output_file = gt_output_subfolder / "{}.txt".format(test_base_name)
+                        save_labels_to_txt(vertices, labels, str(output_file))
+        
+        counter = 0
+        for subfolder in test_dir.iterdir():
+            if subfolder.is_dir():
+                gt_subfolder = gt_dir / subfolder.name if gt_dir.exists() else None
+                gt_output_subfolder = gt_output_dir / subfolder.name
                 
-                max_files = max(len(test_files), len(gt_files))
+                test_files = list(subfolder.glob("*"))
+                for test_file in test_files:
+                    if test_file.is_file():
+                        test_base_name = test_file.stem
+                        
+                        gt_file_path = gt_subfolder / "{}.txt".format(test_base_name) if gt_subfolder and gt_subfolder.exists() else None
+                        
+                        if gt_file_path and gt_file_path.exists():
+                            new_name = "{}_bad".format(counter)
+                        else:
+                            new_name = "{}_good".format(counter)
+                        
+                        save_stl_to_pcd(str(test_file), str(test_output_dir / "{}.pcd".format(new_name)))
+                        
+                        gt_output_file = gt_output_subfolder / "{}.txt".format(test_base_name)
+                        if gt_output_file.exists():
+                            shutil.move(str(gt_output_file), str(gt_output_dir / "{}.txt".format(new_name)))
+                        
+                        counter += 1
                 
-                for i in range(max_files):
-                    new_name = f"{counter}_bad"
-                    
-                    if i < len(test_files):
-                        test_ext = test_files[i].suffix
-                        shutil.move(str(test_files[i]), str(test_dir / f"{new_name}{test_ext}"))
-                    
-                    if i < len(gt_files):
-                        gt_ext = gt_files[i].suffix
-                        shutil.move(str(gt_files[i]), str(gt_dir / f"{new_name}{gt_ext}"))
-                    
-                    counter += 1
-                
-                if subfolder.exists():
+                if gt_output_subfolder.exists():
                     try:
-                        subfolder.rmdir()
+                        gt_output_subfolder.rmdir()
                     except OSError:
                         pass
-                if gt_subfolder and gt_subfolder.exists():
+        
+        if train_dir.exists():
+            train_files = list(train_dir.glob("*.stl"))
+            for train_file in train_files:
+                if train_file.is_file():
+                    train_base_name = train_file.stem
+                    save_stl_to_pcd(str(train_file), str(train_output_dir / "{}.pcd".format(train_base_name)))
+        
+        if gt_dir.exists():
+            all_gt_files = []
+            for gt_subfolder in gt_dir.iterdir():
+                if gt_subfolder.is_dir():
+                    for gt_file in gt_subfolder.glob("*.txt"):
+                        if gt_file.is_file():
+                            all_gt_files.append(gt_file)
                     try:
                         gt_subfolder.rmdir()
                     except OSError:
                         pass
-        
-        for folder_name in folders_as_good:
-            normal_folder = test_dir / folder_name
-            if normal_folder.exists():
-                for normal_file in normal_folder.glob("*"):
-                    if normal_file.is_file():
-                        new_name = f"{counter}_good{normal_file.suffix}"
-                        shutil.move(str(normal_file), str(test_dir / new_name))
-                        counter += 1
-                
-                try:
-                    normal_folder.rmdir()
-                except OSError:
-                    pass
+            
+            all_gt_files.sort(key=lambda x: x.name)
+            
+            for i, gt_file in enumerate(all_gt_files, 1):
+                new_gt_name = "{}.txt".format(i)
+                shutil.move(str(gt_file), str(gt_dir / new_gt_name))
 
 def norm_pcd(point_cloud):
     center = np.average(point_cloud, axis=0)
@@ -139,50 +181,50 @@ def save_labels_to_txt(vertices, labels, output_path):
 
 def process_category_labels(category_path):
     category_name = os.path.basename(category_path)
-    print(f"Processing category: {category_name}")
+    print("Processing category: {}".format(category_name))
     
     test_path = os.path.join(category_path, 'test')
     gt_input_path = os.path.join(category_path, 'GT')
     gt_output_path = os.path.join(category_path, 'gt1')
     
     if not os.path.exists(test_path):
-        print(f"  Warning: test folder not found in {category_name}")
+        print("  Warning: test folder not found in {}".format(category_name))
         return
     
     if os.path.exists(gt_output_path):
         shutil.rmtree(gt_output_path)
-        print(f"  Cleaned existing gt folder in {category_name}")
+        print("  Cleaned existing gt folder in {}".format(category_name))
     os.makedirs(gt_output_path, exist_ok=True)
     
     stl_files = glob.glob(os.path.join(test_path, "*.stl"))
-    print(f"  Found {len(stl_files)} STL files in {category_name}")
+    print("  Found {} STL files in {}".format(len(stl_files), category_name))
     
     for stl_file in stl_files:
         base_name = os.path.splitext(os.path.basename(stl_file))[0]
         vertices = load_stl_vertices(stl_file)
         if vertices is None:
-            print(f"    Failed to load: {base_name}")
+            print("    Failed to load: {}".format(base_name))
             continue
         
         if '_good' in base_name:
-            print(f"有good")
             labels = np.zeros(len(vertices), dtype=int)
+            print("    Processing good sample: {}".format(base_name))
         elif '_bad' in base_name:
-            
-            gt_file = os.path.join(gt_input_path, f"{base_name}.txt")
+            gt_file = os.path.join(gt_input_path, "{}.txt".format(base_name))
             gt_points = load_gt_points(gt_file)
-            if len(gt_points) > 0 :
-                print(f"有bad")
-                labels = mark_stl_with_anomalies(vertices, gt_points) 
+            if len(gt_points) > 0:
+                labels = mark_stl_with_anomalies(vertices, gt_points)
+                print("    Processing bad sample with GT: {}".format(base_name))
             else:
                 labels = np.zeros(len(vertices), dtype=int)
+                print("    Warning: bad sample without GT, treating as good: {}".format(base_name))
         else:
-            print(f"    Skipped unknown type: {base_name}")
+            print("    Skipped unknown type: {}".format(base_name))
             continue
         
-        output_file = os.path.join(gt_output_path, f"{base_name}.txt")
+        output_file = os.path.join(gt_output_path, "{}.txt".format(base_name))
         save_labels_to_txt(vertices, labels, output_file)
-        print(f"    Processed: {base_name} ({len(vertices)} vertices)")
+        print("    Processed: {} ({} vertices)".format(base_name, len(vertices)))
 
 def generate_gt_labels():
     current_dir = os.getcwd()
@@ -226,7 +268,7 @@ def save_stl_to_pcd(stl_path, pcd_path):
 
 def process_category_conversion(category_path):
     category_name = os.path.basename(category_path)
-    print(f"Processing category: {category_name}")
+    print("Processing category: {}".format(category_name))
     
     gt_path = os.path.join(category_path, 'gt1')
     train_path = os.path.join(category_path, 'train')
@@ -236,42 +278,42 @@ def process_category_conversion(category_path):
     if os.path.exists(gt_path):
         if os.path.exists(test_output_path):
             shutil.rmtree(test_output_path)
-            print(f"  Cleaned existing Test folder in {category_name}")
+            print("  Cleaned existing Test folder in {}".format(category_name))
         os.makedirs(test_output_path, exist_ok=True)
         
         txt_files = glob.glob(os.path.join(gt_path, "*.txt"))
-        print(f"  Found {len(txt_files)} TXT files in gt folder")
+        print("  Found {} TXT files in gt folder".format(len(txt_files)))
         
         for txt_file in txt_files:
             base_name = os.path.splitext(os.path.basename(txt_file))[0]
-            pcd_file = os.path.join(test_output_path, f"{base_name}.pcd")
+            pcd_file = os.path.join(test_output_path, "{}.pcd".format(base_name))
             
             if save_txt_to_pcd(txt_file, pcd_file):
-                print(f"    Converted: {base_name}.txt -> {base_name}.pcd")
+                print("    Converted: {}.txt -> {}.pcd".format(base_name, base_name))
             else:
-                print(f"    Failed to convert: {base_name}.txt")
+                print("    Failed to convert: {}.txt".format(base_name))
     else:
-        print(f"  No gt folder found in {category_name}")
+        print("  No gt folder found in {}".format(category_name))
     
     if os.path.exists(train_path):
         if os.path.exists(train_output_path):
             shutil.rmtree(train_output_path)
-            print(f"  Cleaned existing Train folder in {category_name}")
+            print("  Cleaned existing Train folder in {}".format(category_name))
         os.makedirs(train_output_path, exist_ok=True)
         
         stl_files = glob.glob(os.path.join(train_path, "*.stl"))
-        print(f"  Found {len(stl_files)} STL files in train folder")
+        print("  Found {} STL files in train folder".format(len(stl_files)))
         
         for stl_file in stl_files:
             base_name = os.path.splitext(os.path.basename(stl_file))[0]
-            pcd_file = os.path.join(train_output_path, f"{base_name}.pcd")
+            pcd_file = os.path.join(train_output_path, "{}.pcd".format(base_name))
             
             if save_stl_to_pcd(stl_file, pcd_file):
-                print(f"    Converted: {base_name}.stl -> {base_name}.pcd")
+                print("    Converted: {}.stl -> {}.pcd".format(base_name, base_name))
             else:
-                print(f"    Failed to convert: {base_name}.stl")
+                print("    Failed to convert: {}.stl".format(base_name))
     else:
-        print(f"  No train folder found in {category_name}")
+        print("  No train folder found in {}".format(category_name))
 
 def convert_to_pcd():
     current_dir = os.getcwd()
@@ -326,20 +368,19 @@ def remove_good_files_from_gt(target_dir):
 
 def create_final_dataset():
     current_dir = os.getcwd()
-    target_dir = os.path.join(current_dir, 'MulSen_AD_processed')
-    parent_dir = os.path.dirname(current_dir)
+    target_dir = os.path.join(current_dir, 'MulSen_AD_process')
     
     categories = [d for d in os.listdir(current_dir) 
-                 if os.path.isdir(os.path.join(current_dir, d)) and d != 'MulSen_AD_processed']
+                 if os.path.isdir(os.path.join(current_dir, d)) and d != 'MulSen_AD_process']
     
     print(f"Found {len(categories)} categories: {categories}")
     
     if os.path.exists(target_dir):
         shutil.rmtree(target_dir)
-        print(f"Cleaned existing MulSen_AD_processed folder")
+        print(f"Cleaned existing MulSen_AD_process folder")
     
     os.makedirs(target_dir)
-    print(f"Created MulSen_AD_processed folder")
+    print(f"Created MulSen_AD_process folder")
     
     for category in categories:
         source_category_path = os.path.join(current_dir, category)
@@ -349,7 +390,23 @@ def create_final_dataset():
         
         os.makedirs(target_category_path)
         
-        copied_count = copy_and_rename_folders(source_category_path, target_category_path)
+        folders_to_copy = {
+            'train1': 'train1',
+            'test1': 'test1', 
+            'gt1': 'gt1'
+        }
+        
+        copied_count = 0
+        for source_folder, target_folder in folders_to_copy.items():
+            source_path = os.path.join(source_category_path, source_folder)
+            target_path = os.path.join(target_category_path, target_folder)
+            
+            if os.path.exists(source_path):
+                shutil.copytree(source_path, target_path)
+                print(f"    Copied: {source_folder} -> {target_folder}")
+                copied_count += 1
+            else:
+                print(f"    Warning: {source_folder} not found")
         
         if copied_count == 0:
             print(f"    No valid folders found for {category}, removing empty directory")
@@ -357,25 +414,48 @@ def create_final_dataset():
         else:
             print(f"    Successfully processed {category} ({copied_count}/3 folders copied)")
     
-    print(f"\nRemoving files containing 'good' from GT folders...")
-    remove_good_files_from_gt(target_dir)
+    print(f"\nRenaming folders to final structure...")
+    for category in os.listdir(target_dir):
+        category_path = os.path.join(target_dir, category)
+        if os.path.isdir(category_path):
+            rename_mappings = {
+                'train1': 'train',
+                'test1': 'test',
+                'gt1': 'GT'
+            }
+            
+            for old_name, new_name in rename_mappings.items():
+                old_path = os.path.join(category_path, old_name)
+                new_path = os.path.join(category_path, new_name)
+                
+                if os.path.exists(old_path):
+                    os.rename(old_path, new_path)
+                    print(f"    Renamed: {category}/{old_name} -> {category}/{new_name}")
     
-    parent_target = os.path.join(parent_dir, 'MulSen_AD_processed')
-    if os.path.exists(parent_target):
-        shutil.rmtree(parent_target)
-        print(f"Cleaned existing MulSen_AD_processed in parent directory")
+    print(f"\nRemoving good files from GT folders...")
+    for category in os.listdir(target_dir):
+        category_path = os.path.join(target_dir, category)
+        gt_path = os.path.join(category_path, 'GT')
+        if os.path.isdir(gt_path):
+            files = os.listdir(gt_path)
+            good_files = [f for f in files if 'good' in f]
+            
+            for good_file in good_files:
+                file_path = os.path.join(gt_path, good_file)
+                os.remove(file_path)
+                print(f"    Removed: {category}/GT/{good_file}")
+            
+            if good_files:
+                print(f"    Removed {len(good_files)} good files from {category}/GT")
     
-    shutil.move(target_dir, parent_target)
-    print(f"\nMoved MulSen_AD_processed to parent directory: {parent_target}")
-    
-    print(f"\nAll processing completed! MulSen_AD_processed folder created with reorganized structure in parent directory.")
+    print(f"\nAll processing completed! MulSen_AD_process folder created with final structure.")
 
 def cleanup_intermediate_files():
     current_dir = os.getcwd()
-    folders_to_delete = ['gt1', 'Test1', 'Train1']
+    folders_to_delete = ['gt1', 'test1', 'train1']
     
     categories = [d for d in os.listdir(current_dir) 
-                 if os.path.isdir(os.path.join(current_dir, d))]
+                 if os.path.isdir(os.path.join(current_dir, d)) and d != 'MulSen_AD_process']
     
     print(f"Found {len(categories)} directories: {categories}")
     
@@ -402,26 +482,33 @@ def cleanup_intermediate_files():
     
     print(f"\nCleanup completed! Total folders deleted: {total_deleted}")
 
+def cleanup_intermediate_files():
+    current_dir = os.getcwd()
+    folders_to_delete = ['gt1', 'test1', 'train1']
+    
+    categories = [d for d in os.listdir(current_dir) 
+                 if os.path.isdir(os.path.join(current_dir, d)) and d != 'MulSen_AD_process']
+    
+    for category in categories:
+        category_path = os.path.join(current_dir, category)
+        
+        for folder_name in folders_to_delete:
+            folder_path = os.path.join(category_path, folder_name)
+            
+            if os.path.exists(folder_path):
+                shutil.rmtree(folder_path)
+
 def run_all_steps():
-    print("Step 1: Moving pointcloud contents...")
     move_pointcloud_contents()
     time.sleep(1)  
-    print("\nStep 2: Reorganizing files...")
     reorganize_files()
     time.sleep(1)  
-    print("\nStep 3: Generating GT labels...")
-    generate_gt_labels()
-    time.sleep(1)  
-    print("\nStep 4: Converting to PCD format...")
-    convert_to_pcd()
-    time.sleep(1)  
-    print("\nStep 5: Creating final dataset...")
     create_final_dataset()
     time.sleep(1)  
-    print("\nStep 6: Cleaning up intermediate files...")
     cleanup_intermediate_files()
-    time.sleep(1)  
-    print("\nAll steps completed successfully!")
+    time.sleep(1)
+    restore_original_structure()
+    time.sleep(1)
 
 if __name__ == "__main__":
     run_all_steps()
